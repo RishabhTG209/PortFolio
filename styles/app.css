@@ -206,17 +206,31 @@ img {
       color: var(--color-main);
       font-weight: var(--font-bolder);
       display: inline-block; }
+
+      /* .header__logo a:hover{
+        background-color: black;
+        padding: 20px;
+        color: white;
+        transition: .7s;
+      } */
       .header__logo a span {
         display: block;
         line-height: 0.8; }
         .header__logo a span:last-child {
           font-size: 2rem;
-          color: var(--color-accent); }
+          color: var(--color-accent); 
+        }
+        /* .header__logo a span:last-child:hover {
+          color: var(--color-main);
+          transition:0.7s;
+        } */
+        
   .header__contact {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 5rem; }
+    gap: 5rem; 
+  }
     @media only screen and (max-width: 1200px) {
       .header__contact {
         gap: 3rem; }
@@ -314,7 +328,9 @@ img {
   background-color: var(--color-light);
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+ 
+}
   .hero__wrapper {
     padding-top: 2rem;
     padding-bottom: 6rem;
@@ -333,7 +349,13 @@ img {
     width: 19rem;
     height: 19rem;
     border-radius: 50%;
-    border: 5px solid var(--color-accent); }
+    border: 5px solid var(--color-accent);
+    cursor: pointer;
+  }
+  .hero__img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+  }
     @media only screen and (max-width: 600px) {
       .hero__img {
         width: 12rem;
@@ -677,6 +699,18 @@ img {
 #mine_Skills{
   font-size:1.6rem;
   font-weight: bold;
+  cursor: pointer;
+  display:flex;
+}
+#mine_Skills>p,#mine_Skills>span{
+  margin-right:.8%;
+  /* margin-left:.5%; */
+}
+
+#mine_Skills>p:hover{
+  color: rgb(78, 75, 75);
+  transition: .8s;
+  transform: scale(1.05);
 }
 #projects_button{
   /* border:1px solid red; */
@@ -697,4 +731,12 @@ img {
 #deploy_symbol:hover + #hover_deploy{
   /* border:1px solid blue; */
   display:block;
+}
+
+#projectimage1,#projectimage2,#projectimage3{
+  cursor:pointer;
+}
+#projectimage1:hover,#projectimage2:hover,#projectimage3:hover{
+  transition:1s;
+  transform: scale(1.1);
 }
