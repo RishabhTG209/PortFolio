@@ -262,13 +262,11 @@
             </div>
           </div>
           <div class="portfolio__box">
-            <img class="portfolio__img" src="assets/portfolio-04.jpg" alt="Portfolio Items" />
+            <img id="projectimage4" class="portfolio__img" src="assets/Youtube/one.png" alt="Portfolio Items" />
             <div class="portfolio__info">
-              <h3 class="portfolio__title">Three dots</h3>
+              <h3 class="portfolio__title">Youtube_clone</h3>
               <p class="portfolio__content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto dignissimos
-                pariatur dolor vitae assumenda, porro quaerat corporis quos placeat a alias
-                molestiae, totam, dolore cum perspiciatis. Voluptate dolorem doloremque nobis.
+                Built this project to test my knowledge on embedding images and videos in a webpage. Also wanted to see how well my understanding of CSS grid layouts is Also applied some BEM in the styling to apply my learning knowledge of that too. Live site
               </p>
               <br>
               <div class="tech_heading_skills">
@@ -283,11 +281,11 @@
               </div>
               <br>
               <div id="projects_button">
-                <a class="portfolio__link" href="https://github.com/RishabhTG209/KOOVS_Clone" target="_blank">
+                <a class="portfolio__link" href="https://github.com/RishabhTG209/Youtube_clone" target="_blank">
                   <i id="deploy_symbol" class="bi bi-github"></i>
                   <span id="hover_deploy">View Code</span>
                 </a>
-                <a class="portfolio__link2" href="https://vigorous-meitner-b9028e.netlify.app/" target="_blank">
+                <a class="portfolio__link2" href="https://rishabhtg209.github.io/Youtube_clone/" target="_blank">
                   <i id="deploy_symbol" class="bi bi-arrow-up-right-circle-fill"></i>
                   <span id="hover_deploy">View Live</span>
                 </a>
@@ -500,6 +498,7 @@
   "assets/Mels/mels4.JPG"
   ]
 
+
   var index3 = 0;
   setInterval (function(){
     if (index3 === imageSources3.length) {
@@ -509,6 +508,22 @@
     index3++;
   } , 2000);
 
+// ------------------------------------
+  var imageSources4 = [
+    "assets/Youtube/one.png",
+    "assets/Youtube/two.png",
+    "assets/Youtube/three.png",
+    "assets/Youtube/four.png"
+  ]  
+
+  var index4 = 0;
+  setInterval (function(){
+    if (index4 === imageSources4.length) {
+      index4 = 0;
+    }
+    document.getElementById("projectimage4").src = imageSources4[index4];
+    index4++;
+  } , 2000);
 
   document.getElementById("projectimage3").addEventListener("click",function(){
     window.open("https://rishabhtg209.github.io/Recipe_MApp/","_blank");
@@ -518,5 +533,8 @@
   })
   document.getElementById("projectimage1").addEventListener("click",function(){
     window.open("https://vigorous-meitner-b9028e.netlify.app/","_blank");
+  })
+  document.getElementById("projectimage4").addEventListener("click",function(){
+    window.open("https://rishabhtg209.github.io/Youtube_clone/","_blank");
   })
 </Script>

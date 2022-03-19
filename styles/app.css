@@ -739,10 +739,10 @@ img {
   display:block;
 }
 
-#projectimage1,#projectimage2,#projectimage3{
+#projectimage1,#projectimage2,#projectimage3,#projectimage4{
   cursor:pointer;
 }
-#projectimage1:hover,#projectimage2:hover,#projectimage3:hover{
+#projectimage1:hover,#projectimage2:hover,#projectimage3:hover,#projectimage4:hover{
   transition:1s;
   transform: scale(1.1);
 }
